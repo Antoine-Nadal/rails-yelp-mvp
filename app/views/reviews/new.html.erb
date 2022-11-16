@@ -1,0 +1,6 @@
+<h1>Nouvel avis à propos de: <%=@restaurant.name%></h1>
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content %>
+  <%= f.input :rating %>
+  <%= f.submit "poster mon avis", class: "btn btn-primary" %>
+<% end %>
